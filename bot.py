@@ -138,7 +138,7 @@ async def start(_: Client, message: Message):
 
     elif not users[str(user_id)]["vip"]: return await message.reply(
 
-        f"لا يمكنك استخدام هذا البوت\n\n تواصل مع [المطور](tg://openmessage?user_id={owner}) لتفعيل الاشتراك \n  "
+        f"  اهلا وسهلا بك في بوت النشر التلقائي في المجموعات يمكنك التواص مع المطور للأشتراك \n[ViP ⭐] \n قناة البوت @{subscribed} \n [مطور البوت] (tg://openmessage?user_id={owner}) "
 
     )
 
