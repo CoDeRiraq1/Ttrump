@@ -69,7 +69,7 @@ loop = get_event_loop()
 listener = Listener(client = app)
 
 owner = 5539139939 #ايديك
-coder = "AA37A"
+coder = "AA37A" #يوزرك
 news = "vipcmd"
 """
 
@@ -135,11 +135,11 @@ async def start(_: Client, message: Message):
 
         write(users_db, users)
 
-        return await message.reply(f" وسهلا بك في بوت النشر التلقائي في المجموعات يمكنك التواصل مع المطور للأشتراك \n[ViP ⭐] \n [قناة البوت] (https.t.me/@{news}) \n [مطور البوت] (https.t.me/{coder}) ")
+        return await message.reply(f" وسهلا بك في بوت النشر التلقائي في المجموعات يمكنك التواصل مع المطور للأشتراك  \n [قناة البوت] (@{news}) \n [مطور البوت] (@{coder}) ")
 
     elif not users[str(user_id)]["vip"]: return await message.reply(
 
-        f"  اهلا وسهلا بك في بوت النشر التلقائي في المجموعات يمكنك التواصذل مع المطور للأشتراك \n[ViP ⭐] \n قناة البوت @{subscribed} \n [مطور البوت] (tg://openmessage?user_id={owner}) "
+        f"اهلا وسهلا بك في بوت النشر التلقائي في المجموعات يمكنك التواصل مع المطور للأشتراك \n (@{news})  قناة البوت \n (@{coder}) [مطور البوت]"
 
     )
 
@@ -1339,3 +1339,4 @@ if __name__=="__main__":
     loop.run_until_complete(main())
 
     loop.run_until_complete(main())
+ 
